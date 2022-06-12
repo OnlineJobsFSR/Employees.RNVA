@@ -1,0 +1,87 @@
+
+nav ul {
+    height: 80px;
+    background-color: grey;
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    overflow: hidden;
+  }
+  
+  li {
+      font-size: 20px;
+      padding: 30px;
+      color: white;
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    text-decoration: none;
+  }
+
+.links .a:hover {
+      background-color: #06d6a0;
+  }
+
+
+
+  /** table styles **/
+
+  
+table{
+    background-color: lightgray;
+    padding: 10px;
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td, .table th{
+
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.table td > a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+}
+
+.table tr:hover{
+    background-color:#06d6a0 ;
+}
+
+.table tr:hover td > a{
+    box-shadow: none;
+}
+
+.table .thead-dark th{
+    color :darkslategrey;
+    background-color: var(--dark) ;
+    border-color: #32383e;
+}
+
+@media only screen and (max-width: 1024px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr { border: 1px solid var(--border);}
+
+    td{
+        border: none;
+        position: relative;
+    }
+
+}
